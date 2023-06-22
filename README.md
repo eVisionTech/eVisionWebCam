@@ -14,7 +14,7 @@ JS библиотека для доступа к видеопотоку web ка
 
 #### Загрузка через Git Clone
 ``` shell
-git https://git.digtlab.ru/evision/evision.webcam.git
+git https://github.com/eVisionTech/eVisionWebCam.git
 ```
 
 ## Использование
