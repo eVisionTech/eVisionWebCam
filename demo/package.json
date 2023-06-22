@@ -1,0 +1,34 @@
+{
+  "name": "evision-webcam-demo-app",
+  "version": "1.0.0",
+  "description": "HTML5 webcam recording javascript library",
+  "main": "js/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eVisionTech/eVisionWebCam.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "build": "webpack --mode production --progress"
+  },
+  "keywords": [
+    "webcam",
+    "camera",
+    "getusermedia",
+    "mediarecorder",
+    "streaming",
+    "frontcamera",
+    "backcamera"
+  ],
+  "author": "eVision",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

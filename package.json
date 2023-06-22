@@ -1,0 +1,13 @@
+{
+  "name": "evision-webcam",
+  "version": "1.0.0",
+  "description": "HTML5 webcam recording javascript library",
+  "main": "src/evision-webcam.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eVisionTech/eVisionWebCam.git"
+  },
+  "homepage": "https://evision.tech",
+  "author": "eVision",
+  "license": "MIT"
+}

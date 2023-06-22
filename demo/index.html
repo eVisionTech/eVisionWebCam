@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>evision-webcam</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style/webcam-demo.css?_9'>
+    <script type="text/javascript" src="js/evision-webcam.min.js"></script>
+</head>
+
+<body>
+    <main id="webcamApp">
+        <div class="form-control webcam-start" id="webcamControl">
+            <label class="form-switch">
+                <input type="checkbox" id="webcamSwitch">
+                <i></i>
+                <span id="webcamCaption">Нажмите, чтобы запустить камеру</span>
+            </label>
+        </div>
+
+        <div id="errorMsg" class="col-12 col-md-6 alert-danger d-none">
+            <p>
+                Не удается запустить камеру, пожалуйста, разрешите доступ к камере. <br />
+                Вам нужно открыть страницу в Sarafi (iPhone)/ Chrome (Android)
+            </p>
+            <button id="closeError" class="btn btn-primary ml-3">OK</button>
+        </div>
+        <div class="md-modal md-effect-12">
+            <div id="appPanel" class="app-panel md-content row p-0 m-0">
+                <div id="webcamContainer" class="webcam-container col-12 d-none p-0 m-0">
+                    <video id="webcamVideo" autoplay playsinline width="640" height="480"></video>
+                </div>
+                <div id="cameraControls" class="cameraControls">
+                    <a href="#" id="startRec" title="Начать запись" class="d-none"><i
+                            class="material-icons">fiber_manual_record</i></a>
+                    <a href="#" id="stopRec" title="Остановить запись" class="d-none"><i
+                            class="material-icons">stop_circle</i></a>
+                    <a href="#" id="downloadVideo" target="_blank" title="Скачать видео" class="d-none"><i
+                            class="material-icons">file_download</i></a>
+
+                    <div class="form-control webcam-start controls">
+                        <button id="cameraFlip" title="Сменить камеру" class="btn d-none"></button>
+                        <a href="#" id="exitApp" title="Выход" class="d-none"><i
+                                class="material-icons small">exit_to_app</i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+    </main>
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>
